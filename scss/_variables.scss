@@ -143,15 +143,16 @@ $default-float: left;
 // $include-html-tooltip-classes: $include-html-classes;
 
 // Media Queries
-
-// $small-screen: 768px;
-// $medium-screen: 1280px;
-// $large-screen: 1440px;
+$small-screen: 320px;
+$medium-screen: 768px;
+$large-screen: 1280px;
+$xlarge-screen: 1440px;
 
 // $screen: "only screen";
-// $small: "only screen and (min-width: #{$small-screen})";
-// $medium: "only screen and (min-width: #{$medium-screen})";
-// $large: "only screen and (min-width: #{$large-screen})";
+$small-screen: "only screen and (min-width: #{$small-screen})";
+$medium: "only screen and (min-width: #{$medium-screen})";
+$large: "only screen and (min-width: #{$large-screen})";
+$xlarge: "only screen and (min-width: #{$xlarge-screen})";
 // $landscape: "only screen and (orientation: landscape)";
 // $portrait: "only screen and (orientation: portrait)";
 

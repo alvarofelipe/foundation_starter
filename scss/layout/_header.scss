@@ -1,13 +1,75 @@
-// Non-modular or client styles for .l-header region.
-
-.l-header {}
-
-// Top Bar
-//--------------------------------------------------
-.top-bar {
-  .title-area {}
+//SELECTORES PARA SUPERFISH (EN DESKTOP)
+nav { 
+	//Contenedor para el menu
+	.block-superfish { 
+		//Bloque superfish
+		ul.sf-menu { 
+			//Menu generado por superfish
+			li {	
+				//Cada uno de los items del menu
+				a { 
+					//Link dentro de cada item del menu
+					&:hover {
+						//Estilo del link en hover
+					} 
+				} 
+			} 
+		} 
+	} 
 }
 
-.top-bar-section {}
-.top-bar-section .left {}
-.top-bar-section .right {}
+//SELECTORES PARA EL SLIDER DE PORTADA
+.slider.view {
+	//Vista para el slider
+	.flexslider {
+		//Contenedor para los slides	
+		ul.slides {
+			//Lista que contiene los slides
+			li {
+				//Cada uno de los slides
+				&.flex-active-slide {
+					//Slide activo
+				}
+				img {
+					//Cada imagen del slider
+				}
+				.datos {
+					//Contenedor para el copy;
+					.titulo {
+						//Titulo del slider (del nodo)
+					}
+					.descripcion {
+						//Copy dentro del slider
+						p{
+							//Por si CKEditor incluye un p 
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+		ol.flex-control-nav {  
+		// Botones de paginacion
+			li {
+				a {
+					//Botones (la propiedad background cambia el color)
+					&.flex-active {
+						//Boton activo
+					}
+				}
+			}
+		}
+		ul.flex-direction-nav {  
+		//Flechas a los lados del slider
+			li {
+				//Cada uno de los items
+				a.flex-prev {
+					//Item previous
+				}
+				a.flex-next {
+					//Item next
+				} 
+			} 
+		} 
+	}
+}

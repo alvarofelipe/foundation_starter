@@ -33,7 +33,7 @@ stylesheets[all][] = css/custom.css
 
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
-stylesheets[all][] = css/foundation.min.css
+; stylesheets[all][] = css/foundation.min.css
 
 ; Foundation JavaScript.
 
@@ -47,7 +47,7 @@ scripts[] = js/vendor/custom.modernizr.js
 ; scripts[] = js/foundation.min.js
 
 ; Foundation framework scripts (uncompressed).
- scripts[] = js/foundation/foundation.js
+;scripts[] = js/foundation/foundation.js
 ;scripts[] = js/foundation/foundation.abide.js
 ;scripts[] = js/foundation/foundation.alerts.js
 ;scripts[] = js/foundation/foundation.clearing.js
@@ -66,7 +66,7 @@ scripts[] = js/vendor/custom.modernizr.js
 
 ; Theme scripts.
 ; This file is empty, just uncomment this line and start editing!
-; scripts[] = js/scripts.js
+scripts[] = js/scripts.js
 ; scripts[] = js/jquery.backstretch.min.js
 ; scripts[] = js/jquery.masonry.js
 ; scripts[] = js/modernizr-transitions.js

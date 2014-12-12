@@ -1,6 +1,24 @@
-// Non-modular or client styles for .l-footer region.
+footer {
 
+	.ed-creditos {
+		//Creditos de Escuela Digital
+		opacity: .3;
+		text-align: center;
+		-webkit-transition: all .2s;
+		-o-transition: all .2s;
+		transition: all .2s;
 
-.l-footer {}
-.l-footer-columns {}
+		&:hover {
+			opacity: .8;
+		}
 
+		@media #{$large} {
+			float: right;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
