@@ -5,55 +5,29 @@
 // - Also, before adding styles be sure to modify variables in the
 //   "scss/_variables.scss" file. You may not need to write any code.
 
-// Headings
-//------------------------------------------
-// h1, h2, h3,
-// h4, h5, h6 {}
+a {
+	color: $primary-color;
+	text-decoration: none;
 
-// Anchors
-//-----------------------------------------------------------------------------
-// a {}
+	&:hover {
+		text-decoration: underline;
+	}
 
-// a:focus {}
+	&:active {
 
-// a.active,
-// a:active,
-// a:hover {}
+	}
+}
 
-// Form Input
-//-----------------------------------------------------------------------------
-// input[type="text"],
-// input[type="password"],
-// input[type="date"],
-// input[type="datetime"],
-// input[type="datetime-local"],
-// input[type="month"],
-// input[type="week"],
-// input[type="email"],
-// input[type="number"],
-// input[type="search"],
-// input[type="tel"],
-// input[type="time"],
-// input[type="url"],
-// textarea {
-// }
+body {
+	line-height: 1.4;
+}
 
+h1, h2, h3, h4, h5, h6 {
+	color: $secondary-color;
+	font-family: arial;
+}
 
-// input[type="text"],
-// input[type="password"],
-// input[type="date"],
-// input[type="datetime"],
-// input[type="datetime-local"],
-// input[type="month"],
-// input[type="week"],
-// input[type="email"],
-// input[type="number"],
-// input[type="search"],
-// input[type="tel"],
-// input[type="time"],
-// input[type="url"],
-// textarea {
-
-// }
-
-// select {}
+p {
+	font-size: .9em;
+	margin-bottom: 1em;
+}

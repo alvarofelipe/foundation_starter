@@ -1,0 +1,85 @@
+.slider.view {
+	//Vista para el slider
+	.flexslider {
+		//Contenedor para los slides
+		ul.slides {
+			//Lista que contiene los slides
+			li {
+				//Cada uno de los slides
+				&.flex-active-slide {
+					//Slide activo
+				}
+				img {
+					//Cada imagen del slider
+					border-right: 1px solid #fff;
+				}
+				.datos {
+					//Contenedor para el copy;
+					@media #{$large} {
+						//Estilos para desktop
+					}
+					.titulo {
+						//Titulo del slider (del nodo)
+						@media #{$large} {
+							//Estilos para desktop
+						}
+					}
+					.descripcion {
+						//Copy dentro del slider
+						display: none;
+						@media #{$large} {
+							display: block;
+						}
+						p{
+							//Por si CKEditor incluye un p 
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+
+		ol.flex-control-nav {  
+			// Botones de paginacion
+			display: none;
+
+			@media #{$large} {
+				bottom: 1em;
+				right: 2em;
+				width: auto;
+				z-index: 20;
+
+				li {
+
+					a {
+						//Botones (la propiedad background 
+						// cambia el color)
+						background: rgba(#000,.85);
+						width: 1em;
+						height: 1em;
+
+						&.flex-active {
+							//Boton activo
+							background: $secondary-color;
+						}
+					}
+				}
+			}
+			
+		}
+		ul.flex-direction-nav {  
+			//Flechas a los lados del slider
+			li {
+				//Cada uno de los items
+				a.flex-prev {
+					//Item previous
+					font-size: 0;
+				}
+				a.flex-next {
+					//Item next
+					font-size: 0;
+				} 
+			} 
+		} 
+	}
+}

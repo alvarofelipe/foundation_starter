@@ -36,36 +36,33 @@
 //
 // Common file is where you place common utility classes to extend or
 // parametrics. Optional file.
-@import "base/common";
+//@import "base/common";
 //
 // Fix for some Drupal CSS quirks (Drupalisms).
 //@import "base/drupal";
 //
 // Styling for elements.
-//@import "base/elements";
-//
+@import "base/elements";
 
-// Components
-// @import "components/forms";
-// @import "components/foundation-icons";
-@import "components/blocks";
-@import "components/buttons";
-@import "components/type";
-
+//ED Features
+@import "features/blog";
+@import "features/slider";
+@import "features/pages";
+@import "features/galerias";
 // Layout
+//
 // Each section of the document has it's own partial seperated out to improve
 // developer experience. Additionally, grids can be declared in layouts as well.
 @import "layout/header";
 @import "layout/main";
 @import "layout/aside";
-@import "layout/triptych";
 @import "layout/footer";
 
-//Escuela Digital Features
-@import "features/blog"
-@import "features/galerias"
-@import "features/pages"
-@import "features/slider"
+// Components
+@import "components/buttons";
+@import "components/type";
+// @import "components/forms";
+// @import "components/foundation-icons";
 
 // Themes
 // @import "theme/button-light";
